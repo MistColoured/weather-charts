@@ -20,10 +20,10 @@ class SearchBar extends Component {
   onFormSubmit(event) {
     // Prevent the page from reloading
     event.preventDefault();
-    console.log(this.state.term)
-    // this.props.fetchWeather(this.state.term);
-    // // After entering the city we clear the input
-    // this.setState({ term: '' });
+    // console.log(this.state.term)
+    this.props.fetchWeather(this.state.term);
+    // After entering the city we clear the input
+    this.setState({ term: '' });
   }
   render() {
     return (
